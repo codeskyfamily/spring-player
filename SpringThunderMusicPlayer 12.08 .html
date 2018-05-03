@@ -1,0 +1,626 @@
+<html>
+	<head>
+		<title>SPRING MUSIC</title>
+		<meta charset="UTF-8"/>
+		<link rel="icon" href="img/player.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="img/player-shotcut.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<style type="text/css">
+			
+		</style>
+	</head>
+
+	<body>		
+		<div class="box">
+			<div class="top">
+				<div class="symbol"></div>
+				
+				<div class="upanddown"><div class="up"></div><div class="depart"><div class="down"></div></div></div>
+				<div class="searchdiv">
+					<div class="searchbox">
+						<div class="searchicon"></div>
+						<div class="searchsongsname">
+							<div>
+								搜索音乐，歌手，歌词
+							</div>						
+						</div>
+					</div>
+						
+					
+				</div>
+				
+
+				<div class="topinfodiv">
+					<div class="userphotodiv"><img name="userphoto" src="img/boy.png" /></div>
+					<div class="userinfo"><div class="nickname">同桌的你</div><div class="detail"></div></div>
+					<div class="earpiece"></div>
+					<div class="microphone"></div>
+					<div class="share"></div>
+					<div class="depart2"></div>
+					<div class="set"></div>
+				</div>
+				
+			</div>
+			<div class="middle">
+				<div class="left">
+					<div class="chapters">
+						<div class="chapterheaddiv">
+							<div class="chapterhead">&nbsp;&nbsp;推荐</div>
+						</div>
+						<div class="chapterdiv">
+							<div class="chapteritem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发现音乐</div>
+							<div class="chapteritem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;私人FM</div>
+							<div class="chapteritem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MV</div>
+							<div class="chapteritem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;朋友</div>					
+						</div>
+						
+						<div class="chapterheaddiv">
+							<div class="chapterhead">&nbsp;&nbsp;我的音乐</div>
+						</div>
+						<div class="chapterdiv">
+							<div class="chapteritem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;本地音乐</div>
+							<div class="chapteritem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下载管理</div>
+							<div class="chapteritem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的音乐云盒</div>
+							<div class="chapteritem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的收藏</div>					
+						</div>
+						<div class="chapterheaddiv">
+							<div class="chapterhead">&nbsp;&nbsp;创建的歌单</div>
+						</div>
+						<div class="chapterdiv">
+							<div class="chapteritem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我喜欢的音乐</div>
+							<div class="chapteritem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;张韶涵</div>
+							<div class="chapteritem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MV</div>
+							<div class="chapteritem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;王菲</div>					
+						</div>
+						<div class="chapterheaddiv">
+							<div class="chapterhead">&nbsp;&nbsp;收藏的歌单</div>
+						</div>
+						<div class="chapterdiv">
+							<div class="chapteritem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;小提琴</div>
+							<div class="chapteritem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;吉他</div>
+							<div class="chapteritem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;钢琴</div>
+							<div class="chapteritem">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;二胡</div>					
+						</div>
+					</div>
+					
+				</div>
+
+
+
+
+
+
+
+				<div class="right">
+					<div class="indivitems">
+						<div class="indivitem">个性推荐</div>
+						<div class="indivitem">歌单</div>
+						<div class="indivitem">主播电台</div>
+						<div class="indivitem">排行榜</div>
+						<div class="indivitem">歌手</div>
+						<div class="indivitem">最新音乐</div>
+					</div>			
+					<div class="depart3">
+						<hr/>
+					</div>
+					<div class="content"><!--个性推荐里面的内容 -->
+						<div class="indivrecomd">
+							<div class="lanternslide">幻灯片预留部分</div>
+							<div class="listitem"><div class="leftitem">&nbsp;推荐歌单</div><div class="rightitem">更多></div><hr/></div>
+							<div class="listitem"><div class="leftitem">&nbsp;独家放送</div><div class="rightitem">更多></div><hr/></div>
+							<div class="listitem"><div class="leftitem">&nbsp;最新音乐</div><div class="rightitem">更多></div><hr/></div>
+							<div class="listitem"><div class="leftitem">&nbsp;推荐MV</div><div class="rightitem">更多></div><hr/></div>
+							<div class="listitem"><div class="leftitem">&nbsp;主播电台</div><div class="rightitem">更多></div><hr/></div>
+							<div class="listitem"><hr/></div>					
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bottom">
+				<div class="controlbutton">
+					<div class="leftsong"></div>
+					<div class="playorpause" name="playorpause"></div>
+					<div class="rightsong"></div>
+				</div>
+
+
+				<!--
+				<div class="progressbardiv">
+					<div class="currenttime">00.00</div>
+					<div class="progressbar">						
+						<div class="progresslength"></div>	
+						<div class="progressico">
+							<div class="progressinnerico"></div>
+						</div>					
+					</div>
+					<div class="totaltime">3.48</div>
+				</div>
+				-->
+				<div class="progressscrollBar">
+					<div class="currenttime">00.00</div>
+					<div class="scrollBar">
+						<div class="scroll_Track"></div>
+            			<div class="scroll_Thumb">
+            				<div class="inscroll_Thumb"></div>
+            			</div>
+					</div>
+					<div class="totaltime">6.66</div>
+				</div>
+			
+
+				<div class="othercontro">
+					<div class="volumediv">
+						<div class="volumebar"></div>
+						<div class="volumes"></div>
+						<div class="volume">							
+							<div class="volumeScroll"></div>
+							<div class="volumeScrollbar"></div>
+						</div>				
+					</div>					
+					<div class="playstyle">
+						<div class="playstyleone"></div>
+						<div class="playstyletwo"></div>
+						<div class="playstylethree"></div>
+					</div>
+					<div class="lyricico"></div>
+					<div class="historyplaylist">
+						<div class="toltalsongs">223</div>
+					</div>
+					
+				</div>
+				
+				
+			</div>
+
+			<!-- 左下角歌手信息-->
+			<div class="songinfo">
+				<div class="singerphoto"><img name="singerphoto" src="img/singer.jpg"/></div>
+				<div class="singerandsong">
+					<div class="songname">爱如空气-孙俪</div>
+					<div class="singername">孙俪</div>
+				</div>
+				<div class="operation">
+					<div class="mylove"></div>
+					<div class="sharemylove"></div>
+				</div>
+			</div>
+
+
+			<!-- 播放列表 及历史   始-->
+			<div class="note"> 
+				<div class="close"></div>
+				<div class="historyplaylist">
+					<div class="playlist">
+						<div class="playlistnamediv">
+							<div class="playlistbtn">播放列表</div>
+						</div>
+					</div>
+
+					<div class="history">
+						<div class="historydiv">
+							<div class="historybtn">历史记录</div>
+						</div>
+					</div>				
+				</div>
+				<div class="cutofflinetop"></div>
+				<div class="listinfo">							
+					<div class="sumsongs">总100首</div>
+					<div class="collect">
+						<div class="collectico"></div>
+						<div class="collecttext">收藏全部</div>
+					</div>
+					<div class="clear">
+						<div class="clearico"></div>
+						<div class="cleartext">清空</div>
+					</div>
+				</div>
+				<div class="cutofflinebotttom"></div>
+				<div class="songslist">
+					<div class="piecesong">
+						<div class="choose">
+							<div class="chooseico"></div>
+						</div>
+						<div class="songname ">爱如空气-孙俪</div>
+						<div class="singer ">孙俪</div>
+						<div class="timelength ">04.41</div>
+					</div>
+					<div class="piecesong">
+						<div class="choose">
+							<div class="chooseico"></div>
+						</div>
+						<div class="songname ">南方姑娘</div>
+						<div class="singer ">赵雷</div>
+						<div class="timelength ">05.34</div>
+					</div>
+					<div class="piecesong">
+						<div class="choose">
+							<div class="chooseico"></div>
+						</div>
+						<div class="songname ">安和桥</div>
+						<div class="singer ">宋冬野</div>
+						<div class="timelength ">04.11</div>
+					</div>
+					<div class="piecesong">
+						<div class="choose">
+							<div class="chooseico"></div>
+						</div>
+						<div class="songname ">中华民谣</div>
+						<div class="singer ">孙浩</div>
+						<div class="timelength ">04.18</div>
+					</div>
+					<div class="piecesong">
+						<div class="choose">
+							<div class="chooseico"></div>
+						</div>
+						<div class="songname ">月半小夜曲</div>
+						<div class="singer ">李克强</div>
+						<div class="timelength ">04.51</div>
+					</div>
+					<div class="piecesong">
+						<div class="choose">
+							<div class="chooseico"></div>
+						</div>
+						<div class="songname ">喜欢你</div>
+						<div class="singer ">邓紫棋</div>
+						<div class="timelength ">03.24</div>
+					</div>
+					<div class="piecesong">
+						<div class="choose">
+							<div class="chooseico"></div>
+						</div>
+						<div class="songname ">又见炊烟</div>
+						<div class="singer ">邓丽君</div>
+						<div class="timelength ">05.15</div>
+					</div>
+					<div class="piecesong">
+						<div class="choose">
+							<div class="chooseico"></div>
+						</div>
+						<div class="songname ">山楂树</div>
+						<div class="singer ">纯音乐</div>
+						<div class="timelength ">05.14</div>
+					</div>
+					
+					<div class="piecesong">
+						<div class="choose">
+							<div class="chooseico"></div>
+						</div>
+						<div class="songname ">最终幻想钢琴曲</div>
+						<div class="singer ">钢琴</div>
+						<div class="timelength ">03.54</div>
+					</div>
+					<div class="piecesong">
+						<div class="choose">
+							<div class="chooseico"></div>
+						</div>
+						<div class="songname ">茉莉花</div>
+						<div class="singer ">小提琴</div>
+						<div class="timelength ">04.56</div>
+					</div>
+					<div class="piecesong">
+						<div class="choose">
+							<div class="chooseico"></div>
+						</div>
+						<div class="songname ">风吹麦浪</div>
+						<div class="singer ">孙俪&李健</div>
+						<div class="timelength ">02.56</div>
+					</div>
+					<div class="piecesong">
+						<div class="choose">
+							<div class="chooseico"></div>
+						</div>
+						<div class="songname ">理想三询</div>
+						<div class="singer ">陈鸿宇</div>
+						<div class="timelength ">03.14</div>
+					</div>
+					<div class="piecesong">
+						<div class="choose">
+							<div class="chooseico"></div>
+						</div>
+						<div class="songname ">老男孩</div>
+						<div class="singer ">筷子兄弟</div>
+						<div class="timelength ">04.14</div>
+					</div>
+				</div>
+				<!-- 播放列表 及历史   末-->
+			</div>
+		</div>
+
+		<!--歌词展示部分  独立-->
+		<div class="test1">	
+			<div class="contro">
+				<div class="logo"></div>
+				<div class="direction"></div>
+				<div class="pre"></div>
+				<div class="play"></div>
+				<div class="next"></div>
+				<div class="magnify"></div>
+				<div class="reduce"></div>
+				<div class="microphone"></div>
+				<div class="color"></div>
+				<div class="set"></div>
+				<div class="searchsongs"></div>
+				<div class="lock"></div>
+				<div class="switch"></div>
+				<div class="close"></div>				
+			</div>		
+			<div class="back"></div>
+			<div class="ss">相信我 不会哭 我不会难过 </div>
+			<div class="bottomlyc">
+				<div class="bottomlycword" >错 谁的错 谁能说得清楚 错 谁的错 谁能说得清楚</div>
+			</div>			
+		</div>
+
+
+
+
+
+
+		<audio src="music/孙俪-爱如空气.mp3" id="currentmusic"></audio>
+	</body>
+	<script type="text/javascript">
+		(function(doc,win){
+		
+			var playstyle = { 
+				flag:1,
+				Initialize:function(){ 
+					$(".box .bottom .othercontro .playstyle").click(function(){
+						
+							if(playstyle.flag < 3){							
+								console.log("情况"+playstyle.flag);
+							 	playstyle.flag++;
+							}else{ 
+								 playstyle.flag=1;
+							}
+							switch (playstyle.flag){ 
+								case 1:
+									$(".box .bottom .othercontro .playstyle .playstyleone").css("visibility","visible");
+									$(".box .bottom .othercontro .playstyle .playstyletwo").css("visibility","hidden");
+									$(".box .bottom .othercontro .playstyle .playstylethree").css("visibility","hidden");
+									console.log("单曲循环");break;
+								case 2:
+									$(".box .bottom .othercontro .playstyle .playstyleone").css("visibility","hidden");
+									$(".box .bottom .othercontro .playstyle .playstyletwo").css("visibility","visible");
+									$(".box .bottom .othercontro .playstyle .playstylethree").css("visibility","hidden");
+									console.log("随机");break;
+								default:
+									$(".box .bottom .othercontro .playstyle .playstyleone").css("visibility","hidden");
+									$(".box .bottom .othercontro .playstyle .playstyletwo").css("visibility","hidden");
+									$(".box .bottom .othercontro .playstyle .playstylethree").css("visibility","visible");
+									console.log("列表循环");break;	
+							
+							}								
+
+					});
+				}
+			}
+			playstyle.Initialize();
+
+
+
+
+
+			//播放停止按钮	
+			var playpause = { 
+				flag:false,
+				Initialize:function(){ 
+					//暂停、开始			
+					$("div[name='playorpause']").click(function(){
+						if(this.flag){ 
+							$("#currentmusic")[0].pause();
+							$("div[class='playorpause']").css("background-image","url(img/pause.png)");
+							$("img[name='userphoto']").css("animation","");
+						}else{ 
+							$("#currentmusic")[0].play();
+							$("div[class='playorpause']").css("background-image","url(img/play.png)");
+							$("img[name='userphoto']").css("animation","rot 5s linear infinite");
+						}
+						this.flag=!this.flag;			
+					});
+					//播放完毕操作
+					$("#currentmusic")[0].addEventListener("ended",function(){ 
+						this.flag = false;			
+						//开关变化
+		 				$("div[class='currenttime']").html("00:00");
+		 				$("div[class='scroll_Track']").css("width","0px");
+		 				$("div[class='scroll_Thumb']").css("left","-9px");
+		 				$("#currentmusic")[0].pause();
+						$("div[class='playorpause']").css("background-image","url(img/pause.png)");
+		 				this.currentTime = 0;
+					});
+					//播放时候当前时间变化
+					$("#currentmusic")[0].addEventListener("timeupdate",function(){
+						var currttime = parseFloat(this.currentTime);
+						var totaltime = parseFloat(this.duration)			    
+					    var totaltimelength =  $("div[class='scrollBar']").css("width");
+					    var currttimelength = (currttime/totaltime)*parseFloat(totaltimelength);					   
+					    $("div[class='scroll_Track']").css("width",currttimelength+"px");
+					    $("div[class='scroll_Thumb']").css("left",(currttimelength-9)+"px");					    
+					    $("div[class='currenttime']").html(TimeTransform.transform(currttime));
+					});
+
+				}
+			}
+			playpause.Initialize();
+
+			//时间转换工具
+			var TimeTransform = { 
+				transform:function(timwvalue){
+					var h = parseInt(timwvalue/(60*60));
+					var m = parseInt((timwvalue%(60*60))/60); 
+					var s = parseInt(timwvalue%60);
+					if( h < 10 ){ 
+		        		h = '0' +h; 
+				    }  
+				    if ( m < 10 ){
+				        m = '0' +m;  
+				    }  
+				    if ( s < 10 ){  
+				        s = '0' +s;  
+				    }				    
+				    timwvalue = (h!=0)?(h+':'+m+':'+s):(m+':'+s);
+				    return timwvalue;
+				}
+			}
+
+			var VolumeBar = {
+				flag:false,
+				Initialize:function(){ 
+					$(".box .bottom .volumediv .volume").click(function(event){
+						/*
+						console.log("点击高度:"+event.clientY);
+						console.log("滚轮高度:"+$(".box .bottom .volumediv .volume .volumeScroll").css("height"));
+						console.log("背景:"+$(".box .bottom .volumediv .volume").offset().top);
+						console.log("背景:"+$(".box .bottom .volumediv .volume").css("height"));*/
+						$(".box .bottom .volumediv .volume .volumeScroll").css("height",parseFloat($(".box .bottom .volumediv .volume").offset().top)+parseFloat($(".box .bottom .volumediv .volume").css("height"))-parseFloat(event.clientY)+"px");
+						$(".box .bottom .volumediv .volume .volumeScrollbar").css("bottom",(parseFloat($(".box .bottom .volumediv .volume").offset().top)+parseFloat($(".box .bottom .volumediv .volume").css("height"))-parseFloat(event.clientY)-5)+"px");
+						$("#currentmusic")[0].volume = parseFloat($(".box .bottom .volumediv .volume .volumeScroll").css("height"))/parseFloat($(".box .bottom .volumediv .volume").css("height"));
+						//console.log("声音大小："+$("#currentmusic")[0].volume);
+					});
+					//调整声音条
+					$(".box .bottom .volumediv .volume .volumeScrollbar").mousedown(function(){						
+						flag  = true;
+						$(document.body).mousemove(function(event){ 
+							if(flag == false)return;
+							if(parseFloat(event.clientY) < parseFloat($(".box .bottom .volumediv .volume").offset().top)){ 
+								//console.log("上方");
+								$(".box .bottom .volumediv .volume .volumeScroll").css("height","100%");
+								$(".box .bottom .volumediv .volume .volumeScrollbar").css("bottom",(parseFloat($(".box .bottom .volumediv .volume .volumeScroll").css("height"))-5)+"px");
+								$("#currentmusic")[0].volume = 1;
+							}else if(parseFloat($(".box .bottom .volumediv .volume").offset().top)+parseFloat($(".box .bottom .volumediv .volume").css("height")) < parseFloat(event.clientY)){
+								//console.log("下方");
+								$(".box .bottom .volumediv .volume .volumeScroll").css("height","0%");
+								$(".box .bottom .volumediv .volume .volumeScrollbar").css("bottom","-5px");
+								$("#currentmusic")[0].volume = 0;
+
+							}else{ 
+								//console.log("中间");
+								$(".box .bottom .volumediv .volume .volumeScroll").css("height",parseFloat($(".box .bottom .volumediv .volume").offset().top)+parseFloat($(".box .bottom .volumediv .volume").css("height"))-parseFloat(event.clientY)+"px");
+								$(".box .bottom .volumediv .volume .volumeScrollbar").css("bottom",(parseFloat($(".box .bottom .volumediv .volume").offset().top)+parseFloat($(".box .bottom .volumediv .volume").css("height"))-parseFloat(event.clientY)-5)+"px");
+								$("#currentmusic")[0].volume = parseFloat($(".box .bottom .volumediv .volume .volumeScroll").css("height"))/parseFloat($(".box .bottom .volumediv .volume").css("height"));
+							}
+						});
+					});
+					$(document.body).mouseup(function(){						
+						flag  = false;
+						$("#currentmusic")[0].volume = $("#currentmusic")[0].volume = parseFloat($(".box .bottom .volumediv .volume .volumeScroll").css("height"))/parseFloat($(".box .bottom .volumediv .volume").css("height"));
+						//console.log("声音大小："+$("#currentmusic")[0].volume);	
+					});
+
+					$(".box .bottom .othercontro .volumediv").mouseover(function(){ 
+						$(".box .bottom .othercontro .volumediv .volumes").css("visibility","visible");
+						$(".box .bottom .othercontro .volumediv .volume").css("visibility","visible");
+					}).mouseout(function(){ 
+						$(".box .bottom .othercontro .volumediv .volumes").css("visibility","hidden");
+						$(".box .bottom .othercontro .volumediv .volume").css("visibility","hidden");
+					});
+				}
+			} 
+			VolumeBar.Initialize();
+
+			//进度条部分
+			var ScrollBar = { 
+				scrollflag:false,
+				Initialize:function(){ 
+					//鼠标点击时间调整播放时间
+					$(".box .bottom .progressscrollBar .scrollBar").click(function(event){ 						
+						$(".scroll_Track").css("width",(event.clientX-$(".box .bottom .scrollBar").offset().left+"px"));						
+						$(".scroll_Thumb").css("left",(event.clientX- $(".box .bottom .scrollBar").offset().left -9)+"px");
+						$("#currentmusic")[0].currentTime = (parseFloat($(".scroll_Track").css("width"))/parseFloat($(".box .bottom .scrollBar").css("width")))*(parseFloat($("#currentmusic")[0].duration));					
+						$("div[class='currenttime']").html(TimeTransform.transform(parseFloat($("#currentmusic")[0].currentTime) ));
+					});
+					//调整进度条
+					$(".scroll_Thumb").mousedown(function(){					
+						//console.log("鼠标下去了");
+						scrollflag=true;
+						$(document.body).mousemove(function(event){
+							console.log("move");
+							if(scrollflag == false)return;	
+							/*
+							console.log("进度条左侧长度："+$(".box .bottom .scrollBar").offset().left);
+							console.log("鼠标所在位置："+event.clientX);
+							console.log("相对位置："+(event.clientX-$(".box .bottom .scrollBar").offset().left));*/
+							if(event.clientX-$(".box .bottom .scrollBar").offset().left < 0){
+								//console.log("左侧");
+								$(".scroll_Track").css("width","0%");						
+								$(".scroll_Thumb").css("left","-9px");
+							}else if(event.clientX-$(".box .bottom .scrollBar").offset().left > parseFloat($(".box .bottom .scrollBar").css("width"))){
+								//console.log("右侧");
+								$(".scroll_Track").css("width","100%");
+								$(".scroll_Thumb").css("left",(parseInt($(".scroll_Track").css("width"))-9)+"px");
+							}else{
+							//console.log("中间");
+								$(".scroll_Track").css("width",(event.clientX-$(".box .bottom .scrollBar").offset().left+"px"));								
+								$(".scroll_Thumb").css("left",(event.clientX- $(".box .bottom .scrollBar").offset().left -9)+"px");		
+								//console.log(TimeTransform.transform((parseFloat($(".scroll_Track").css("width"))/parseFloat($(".box .bottom .scrollBar").css("width")))*(parseFloat($("#currentmusic")[0].duration))));						
+								$("div[class='currenttime']").html(TimeTransform.transform((parseFloat($(".scroll_Track").css("width"))/parseFloat($(".box .bottom .scrollBar").css("width")))*(parseFloat($("#currentmusic")[0].duration))));
+							}					
+						});
+					});			
+					$(document.body).mouseup(function(){	
+						scrollflag = false;						
+						$("#currentmusic")[0].currentTime = (parseFloat($(".scroll_Track").css("width"))/parseFloat($(".box .bottom .scrollBar").css("width")))*(parseFloat($("#currentmusic")[0].duration));
+						//console.log("当前时间为："+$("#currentmusic")[0].currentTime);		
+						$("div[class='currenttime']").html(TimeTransform.transform(parseFloat($("#currentmusic")[0].currentTime) ));
+						$(document.body).unbind("mousemove");
+					});					
+				}
+			} 
+			ScrollBar.Initialize();
+
+			var userphoto = { 
+				userphotoflag:false,
+				Initialize:function(){ 
+					$("img[name='userphoto']").click(function(){			
+						if(!this.userphotoflag){
+							$("img[name='userphoto']").css("animation","rot 5s linear infinite");
+						}else{ 
+							$("img[name='userphoto']").css("animation","");
+						}
+						this.userphotoflag=!this.userphotoflag;
+					});
+				}
+			}
+			userphoto.Initialize();
+			
+			//历史播放列表
+			var historyplaylist = { 
+				openplaylist:false,
+				Initialize:function(){
+					$(".note .songslist .piecesong:nth-child(odd)").mouseover(function(){
+						$(this).css("background-color","#dadada");
+					}).mouseout(function(){
+						$(this).css("background-color","#fafafa");
+					});
+					$(".note .songslist .piecesong:nth-child(even)").mouseover(function(){
+						$(this).css("background-color","#dadada");
+					}).mouseout(function(){
+						$(this).css("background-color","#eee");
+					});					
+					$(".box .bottom .historyplaylist").click(function(){				
+						if(!this.openplaylist){
+							$(".box .note").css("visibility","visible");		
+						}else{ 
+							$(".box .note").css("visibility","hidden");	
+						}
+						this.openplaylist=!this.openplaylist;
+					});
+				}
+			} 
+			historyplaylist.Initialize();
+
+			
+			window.onload=function(){				
+				//$("#currentmusic")[0].play();//document.getElementById("currentmusic").play();
+				var vollength = parseFloat($("#currentmusic")[0].duration);
+				if (vollength > 0) {			    			    
+				    $("div[class='totaltime']").html(TimeTransform.transform(vollength));
+				}else{ 
+					console.log("文件损坏，请检查...");
+				}
+			}
+		})(document, window);
+	</script>
+</html>
